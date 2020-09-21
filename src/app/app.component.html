@@ -1,38 +1,67 @@
-<style>
+<style type="text/css">
 
-body{
-  height:100%;
+    .card {
+      overflow: hidden;
+    }
 
-}
+    .card-block .rotate {
+      z-index: 8;
+      float: right;
+      height: 100%;
+    }
 
-.left{
-  height : 100%;
-  color : #FFF;
-}
-.right{
-  height : 100%;
-  color : #3d231b;
-}
-@media (max-width: 1200px) {
-  .left{
-    height:50%
-  }
-  .right{
-    height:50%
-  }
-}
+    .card-block .rotate i {
+      color: rgba(20, 20, 20, 0.15);
+      position: absolute;
+      left: 0;
+      left: auto;
+      right: 10px;
+      bottom: 0;
+      display: block;
+      -webkit-transform: rotate(-44deg);
+      -moz-transform: rotate(-44deg);
+      -o-transform: rotate(-44deg);
+      -ms-transform: rotate(-44deg);
+      transform: rotate(-44deg);
+    }
 
-hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+
+.card-signin {
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
-</style>
 
-<!-- Navbar-->
-<div class = "bg-light h-100">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+.card-signin .card-title {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 3 rem;
+  color : red;
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.btn-google {
+  color: black;
+  background-color: white;
+}
+
+  </style>
+
+<!--Navbar-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="#">ART OF DATA</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -40,55 +69,16 @@ hr {
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+        <button class="btn bg-transparent" (click) = "goToPage('home')">Home</button>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">NOTEBOOKS</a>
+        <button class="btn bg-transparent" (click) = "goToPage('dashboard')">Resource</button>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">COURSES</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT</a>
+        <button class="btn bg-transparent" (click) = "goToPage('profile')">Profile</button>
       </li>
     </ul>
   </div>
 </nav>
 
-<!-- Vertical Split-->
-<div class = "bg-light h-100">
-
-      <div class="col-xl-6 col-sm-12 mx-5 my-5">
-        <h2 class="text-xl-left font-weight-bold text-dark">Velkumaran A P</h2>
-        <div class="text-muted pb-3">@vels10</div>
-
-      </div>
-
-    <hr style="color:solid gray"/>
-
-    <div class = "container bg-light">
-      <div class = "row">
-        <div class="col-lg-6 col-sm-12 ">
-          <h5 class="text-xl-left font-weight-bold text-dark pt-3">
-            About
-            <p class="text-right fa fa-pencil"></p>
-          </h5>
-          <div class="text-muted py-3">Current</div>
-          <h6 class="text-xl-left font-weight-bold text-dark">Intern</h6>
-          <div class="text-muted py-3">Education</div>
-          <h6 class="text-xl-left font-weight-bold text-dark pb-3">PSG College Of Technology</h6>
-          <hr style="color:solid gray"/>
-        </div>
-        <div class="col-lg-6 col-sm-12 bg-light">
-          <h5 class="text-xl-left font-weight-bold text-dark py-3">Achivements</h5>
-          <div class="text-muted py-3">Problems Solved</div>
-          <h6 class="text-xl-left font-weight-bold text-dark">32</h6>
-          <div class="text-muted py-3">Global Rank</div>
-          <h6 class="text-xl-left font-weight-bold text-dark pb-3 ">1</h6>
-        <hr style="color:solid gray"/>
-        </div>
-      </div>
-    </div>
-
-</div>
-</div>
+<router-outlet></router-outlet>
