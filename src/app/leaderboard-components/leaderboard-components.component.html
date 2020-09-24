@@ -1,0 +1,90 @@
+<div class="col-xl-6 col-sm-12 px-5 py-5">
+  <h2 class="text-xl-left font-weght-bold text-dark"><b>Leaderboard</b></h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="chart-wrapper" style="position: relative; height:50vh; width:40vw; justify-content: center;">
+          <canvas baseChart
+              [datasets]="lineChartData"
+              [labels]="lineChartLabels"
+              [options]="lineChartOptions"
+              [colors]="lineChartColors"
+              [legend]="lineChartLegend"
+              [chartType]="lineChartType"
+              [plugins]="lineChartPlugins">
+          </canvas>
+      </div>
+
+      <table>
+        <tr>
+          <td>
+            <div class = "my-2 py-2">
+              <b>Inference:</b>
+            </div>
+          </td>
+          <td class = "my-2 py-2">
+            30% growth each month
+          </td>
+          </tr>
+        <tr>
+          <td>
+            <div class = "my-2 py-2">
+              <b>Activity :</b>
+            </div>
+          </td>
+          <td class = "my-2 py-2">
+            2 hours / day
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="col mt-4">
+      <table class="table table-borderless mt-1">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">RANK</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+
+            <td><a href="#">Global</a></td>
+            <td>11143</td>
+
+          </tr>
+          <tr>
+
+            <td><a href="#">India</a></td>
+            <td>5032</td>
+
+          </tr>
+          <tr>
+
+            <td><a href="#">Tamilnadu</a></td>
+            <td>2435</td>
+
+          </tr>
+          <tr>
+
+            <td><a href="#">Coimbatore</a></td>
+            <td>503</td>
+
+          </tr>
+          <tr>
+
+
+            <td><a href="http://localhost:4200/leaderboard/psg">PSG College of Technology</a></td>
+            <td>12</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
