@@ -20,6 +20,13 @@ import { DataCleaningQuizComponent } from './data-cleaning-quiz/data-cleaning-qu
 import { RegistrationComponent } from './registration/registration.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { LeaderboardComponentsComponent } from './leaderboard-components/leaderboard-components.component';
+import { RoleComponent } from './role/role.component';
+import { DataAnalystComponent } from './data-analyst/data-analyst.component';
+import { DataEngineerComponent } from './data-engineer/data-engineer.component';
+import { DataScientistComponent } from './data-scientist/data-scientist.component';
+import { MlEngineerComponent } from './ml-engineer/ml-engineer.component';
+import { DataArchitectComponent } from './data-architect/data-architect.component';
+import { StatisticianComponent } from './statistician/statistician.component';
 
 
 @NgModule({
@@ -35,6 +42,13 @@ import { LeaderboardComponentsComponent } from './leaderboard-components/leaderb
     RegistrationComponent,
     LeaderboardComponent,
     LeaderboardComponentsComponent,
+    RoleComponent,
+    DataAnalystComponent,
+    DataEngineerComponent,
+    DataScientistComponent,
+    MlEngineerComponent,
+    DataArchitectComponent,
+    StatisticianComponent,
 
   ],
   imports: [

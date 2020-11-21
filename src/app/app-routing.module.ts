@@ -11,6 +11,13 @@ import { DataCleaningQuizComponent } from './data-cleaning-quiz/data-cleaning-qu
 import { RegistrationComponent } from './registration/registration.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { LeaderboardComponentsComponent } from './leaderboard-components/leaderboard-components.component';
+import { RoleComponent } from './role/role.component';
+import { DataAnalystComponent } from './data-analyst/data-analyst.component';
+import { DataArchitectComponent } from './data-architect/data-architect.component';
+import { DataEngineerComponent } from './data-engineer/data-engineer.component';
+import { StatisticianComponent } from './statistician/statistician.component';
+import { MlEngineerComponent } from './ml-engineer/ml-engineer.component';
+import { DataScientistComponent } from './data-scientist/data-scientist.component';
 
 const routes: Routes = [
   {path : '', pathMatch: 'full', redirectTo: 'home'},
@@ -23,6 +30,13 @@ const routes: Routes = [
   {path : 'login', component: RegistrationComponent},
   {path : 'leaderboard/psg', component: LeaderboardComponent},
   {path : 'leaderboard', component: LeaderboardComponentsComponent},
+  {path : 'role', component: RoleComponent},
+  {path : 'role/data-engineer', component: DataEngineerComponent},
+  {path : 'role/data-scientist', component: DataScientistComponent},
+  {path : 'role/data-architect', component: DataArchitectComponent},
+  {path : 'role/data-analyst', component: DataAnalystComponent},
+  {path : 'role/statistician', component: StatisticianComponent},
+  {path : 'role/ml-engineer', component: MlEngineerComponent},
   {path : '404', component: NotfoundComponent},
   // {path: '**', redirectTo: '/404'}
 ];

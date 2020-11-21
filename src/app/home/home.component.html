@@ -1,183 +1,334 @@
 <style type="text/css">
-
     .card {
-      overflow: hidden;
+        overflow: hidden;
     }
-
+    
     .card-block .rotate {
-      z-index: 8;
-      float: right;
-      height: 100%;
+        z-index: 8;
+        float: right;
+        height: 100%;
     }
-
+    
     .card-block .rotate i {
-      color: rgba(20, 20, 20, 0.15);
-      position: absolute;
-      left: 0;
-      left: auto;
-      right: 10px;
-      bottom: 0;
-      display: block;
-      -webkit-transform: rotate(-44deg);
-      -moz-transform: rotate(-44deg);
-      -o-transform: rotate(-44deg);
-      -ms-transform: rotate(-44deg);
-      transform: rotate(-44deg);
+        color: rgba(20, 20, 20, 0.15);
+        position: absolute;
+        left: 0;
+        left: auto;
+        right: 10px;
+        bottom: 0;
+        display: block;
+        -webkit-transform: rotate(-44deg);
+        -moz-transform: rotate(-44deg);
+        -o-transform: rotate(-44deg);
+        -ms-transform: rotate(-44deg);
+        transform: rotate(-44deg);
     }
+    
+    .card-signin {
+        border: 0;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-signin .card-title {
+        margin-bottom: 2rem;
+        font-weight: 500;
+        font-size: 3 rem;
+        color: red;
+    }
+    
+    .card-signin .card-body {
+        padding: 2rem;
+    }
+    
+    .form-signin .btn {
+        font-size: 80%;
+        border-radius: 5rem;
+        letter-spacing: .1rem;
+        font-weight: bold;
+        padding: 1rem;
+        transition: all 0.2s;
+    }
+    
+    .btn-google {
+        color: black;
+        background-color: white;
+    }
+    
+    .image-size {
+        width: 100%;
+        height: 600px;
+    }
+    
+    .alignment-card {
+        padding-left: 80px;
+        padding-top: 45px;
+        padding-bottom: 50px;
+        color: white;
+    }
+    
+    .explore {
+        margin-left: 90%;
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: black;
+        margin-top: 1px;
+    }
+</style>
+
+<!-- Image -->
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="image-size" src="https://img.techpowerup.org/201116/img-20201116-wa0004.jpg" alt="Art Of Data">
+        </div>
+    </div>
+</div>
+
+<!-- Compete By Role-->
+
+<div class="bg-light py-3 px-5">
+    <div>
+        <button class="btn explore mt-3 ">
+            <a href = "http://localhost:4200/role">Explore</a>
+        </button>
+        <h3 class="card-title mb-3 col-xl-3 col-lg-6"><b>Compete By Role</b></h3>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col-xl-3 col-lg-6 mx-5 my-5">
+        <div class="card card-inverse card-success">
+            <div class="card-block bg-dark">
+                <!--<div class="rotate">
+                    <i class="fa fa-database fa-5x mt-5"></i>
+                </div>-->
+                <a href="#" class="btn">
+                    <div class=" text-uppercase ml-2 mt-3 ">
+                        <h3 class="alignment-card ">Roles</h3>
+                    </div>
+                </a>
+                <!-- <h1 class="display-1 ml-4 ">
+                    <a href="# " class="btn stretched-link "></a>
+                </h1> -->
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 mx-5 my-5 ">
+        <div class="card card-inverse card-success ">
+            <div class="card-block bg-dark ">
+                <!-- <div class="rotate ">
+                    <i class="fas fa-braille fa-5x mt-5 "></i>
+                </div> -->
+                <a href="#" class="btn">
+                    <div class="text-uppercase ml-2 mt-3 ">
+                        <h3 class="alignment-card ">Roles</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 mx-5 my-5 ">
+        <div class="card card-inverse card-success ">
+            <div class="card-block bg-dark ">
+                <!-- <div class="rotate ">
+                    <i class="fa fa-project-diagram fa-5x mt-5 "></i>
+                </div> -->
+                <a href="#" class="btn">
+                    <div class="text-uppercase ml-2 mt-3 ">
+                        <h3 class="alignment-card ">Roles</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-.card-signin {
-  border: 0;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
+<!-- Complete Live-->
+<div class="bg-light py-3 px-5 ">
+    <h3 class="card-title my-5 "><b>Compete Live</b></h3>
+</div>
 
-.card-signin .card-title {
-  margin-bottom: 2rem;
-  font-weight: 500;
-  font-size: 3 rem;
-  color : red;
-}
+<div class="row py-2 ">
+    <div class="col-xl-5 col-lg-6 mx-5 my-5 bg-dark ">
+        <div class="card h-100 bg-dark ">
+            <div class="card-block px-4 ">
+                <div class="h4 py-2 text-white ">Data Mining</div>
+                <div class="text-muted py-2 "><b>Duration: 30 minutes</b></div>
+                <div class="text-muted py-2 "><b>Date: 12th December, 2020 8.00PM IST</b></div>
+                <a class="btn my-3 py-3 stretched-link bg-danger text-white" href="# " role="button ">Proceed</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-5 col-lg-6 mx-5 my-5 bg-dark">
+        <div class="card h-100 w-100 bg-dark">
 
-.card-signin .card-body {
-  padding: 2rem;
-}
+            <div class="card-block px-4 ">
+                <div class="h4 py-2 text-white ">Probability</div>
+                <div class="text-muted py-2 "><b>Duration: 45 minutes</b></div>
+                <div class="text-muted py-2 "><b>Date: 18th December, 2020 4.00PM IST</b></div>
+                <a class="btn my-3 py-3 stretched-link bg-danger text-white" href="#" role="button">Proceed</a>
+            </div>
 
-.form-signin .btn {
-  font-size: 80%;
-  border-radius: 5rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  transition: all 0.2s;
-}
+        </div>
+    </div>
+</div>
 
-.btn-google {
-  color: black;
-  background-color: white;
-}
 
-  </style>
+<!-- Compete By Subjects-->
+
+<div class="bg-light py-3 px-5 ">
+    <button class="btn explore ">Explore</button>
+    <h3 class="card-title"><b>Compete By Subjects</b></h3>
+</div>
+
+<div class="row py-2 ">
+    <div class="col-xl-5 col-lg-6 mx-5 my-5 bg-dark ">
+        <div class="card h-100 bg-dark ">
+            <div class="card-block px-4 ">
+                <div class="h4 py-2 text-white ">Machine Learning</div>
+                <a class="btn my-3 py-3 stretched-link bg-secondary text-white" href="# " role="button ">Proceed</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-5 col-lg-6 mx-5 my-5 bg-dark ">
+        <div class="card h-100 bg-dark ">
+            <div class="card-block px-4 ">
+                <div class="card-block px-4 ">
+                    <div class="h4 py-2 text-white ">Data Analytics</div>
+                    <a class="btn my-3 py-3 stretched-link bg-secondary text-white" href="#" role="button">Proceed</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!--Description-->
 
-<div class="card-columns">
-  <div class="card">
+<!-- <div class="card-columns ">
+    <div class="card ">
 
-    <div class="card-body">
-      <h5 class="card-title">Learn and Think</h5>
-      <p class="card-text">Inside Art Of Data you’ll find all the materials for Data Science & we provide a Quiz to test your skills you need to do your data science work.</p>
+        <div class="card-body ">
+            <h5 class="card-title ">Learn and Think</h5>
+            <p class="card-text ">Inside Art Of Data you’ll find all the materials for Data Science & we provide a Quiz to test your skills you need to do your data science work.</p>
+        </div>
     </div>
-  </div>
-  <div class="card p-3">
-    <blockquote class="blockquote mb-0 card-body">
-      <p>You can have data without information, but you cannot have information without data.</p>
-    </blockquote>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Free Courses</h5>
-      <p class="card-text">We Provide Awesome Collection of Data Science Courses to find a Data Scientists in you.</p>
+    <div class="card p-3 ">
+        <blockquote class="blockquote mb-0 card-body ">
+            <p>You can have data without information, but you cannot have information without data.</p>
+        </blockquote>
     </div>
-  </div>
-  <div class="card bg-primary text-white text-center p-3">
-    <blockquote class="blockquote mb-0">
-      <img src="https://www.dataquest.io/wp-content/uploads/2017/06/data-analyst-data-engineer-data-scientist-job-roles.jpg" class="card-img-top" alt="...">
-      <footer class="blockquote-footer text-white">
-        <p> Art of Data </p>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card text-center">
-    <div class="card-body">
-      <h5 class="card-title">Skill Tests</h5>
-      <p class="card-text">Take your time to Study and take a Mini Quizes for more Knowledge.</p>
+    <div class="card ">
+        <div class="card-body ">
+            <h5 class="card-title ">Free Courses</h5>
+            <p class="card-text ">We Provide Awesome Collection of Data Science Courses to find a Data Scientists in you.</p>
+        </div>
     </div>
-  </div>
-  <div class="card p-3 text-right">
-    <blockquote class="blockquote mb-0">
-      <p>The world is one big data problem</p>
-      <footer class="blockquote-footer">
-        <small class="text-muted">
+    <div class="card bg-primary text-white text-center p-3 ">
+        <blockquote class="blockquote mb-0 ">
+            <img src="https://www.dataquest.io/wp-content/uploads/2017/06/data-analyst-data-engineer-data-scientist-job-roles.jpg " class="card-img-top " alt="... ">
+            <footer class="blockquote-footer text-white ">
+                <p> Art of Data </p>
+            </footer>
+        </blockquote>
+    </div>
+    <div class="card text-center ">
+        <div class="card-body ">
+            <h5 class="card-title ">Skill Tests</h5>
+            <p class="card-text ">Take your time to Study and take a Mini Quizes for more Knowledge.</p>
+        </div>
+    </div>
+    <div class="card p-3 text-right ">
+        <blockquote class="blockquote mb-0 ">
+            <p>The world is one big data problem</p>
+            <footer class="blockquote-footer ">
+                <small class="text-muted ">
            Andrew McAfee, principal research scientist, MIT.
         </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Articles</h5>
-      <p class="card-text">Take a micro-course and start applying your new skills immediately</p>
+            </footer>
+        </blockquote>
     </div>
-  </div>
-</div>
+    <div class="card ">
+        <div class="card-body ">
+            <h5 class="card-title ">Articles</h5>
+            <p class="card-text ">Take a micro-course and start applying your new skills immediately</p>
+        </div>
+    </div>
+</div> -->
+
 <!-- Google Register Button-->
 
-<div class="container">
-    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-      <div class="card card-signin my-5">
-        <div class="card-body ">
-          <h2 class="card-title text-center">Join in our community</h2>
-          <form class="form-signin ml-5">
-            <!--<div class="g-signin2 " data-onsuccess="onSignIn"> -->
-              <button class="btn btn-block btn-social btn-google stretched-link " type="submit" ><i class="fa fa-google"></i>REGISTER WITH GOOGLE</button>
-            <!--</div> -->
-          </form>
+<div class="container ">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto ">
+        <div class="card card-signin my-5 ">
+            <div class="card-body ">
+                <h2 class="card-title text-center ">Join in our community</h2>
+                <form class="form-signin ml-5 ">
+                    <!--<div class="g-signin2 " data-onsuccess="onSignIn "> -->
+                    <button class="btn btn-block btn-social btn-google stretched-link " type="submit "><i class="fa fa-google "></i>REGISTER WITH GOOGLE</button>
+                    <!--</div> -->
+                </form>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
+
 
 <!--Staticstics-->
-<h1 class="display-5 hidden-xs-down">STATICSTICS</h1>
 <br/>
-<div class="row mb-3">
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-success">
-              <div class="card-block bg-success">
-                <div class="rotate">
-                  <i class="fa fa-user fa-5x"></i>
+<div class="row mb-3 ">
+    <div class="col-xl-3 col-lg-6 ">
+        <div class="card card-inverse card-success ">
+            <div class="card-block bg-success ">
+                <div class="rotate ">
+                    <i class="fa fa-user fa-5x "></i>
                 </div>
-                <h6 class="text-uppercase">Daily Users</h6>
-                <h1 class="display-1">134</h1>
-              </div>
+                <h6 class="text-uppercase ">Daily Users</h6>
+                <h1 class="display-1 ">134</h1>
             </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-danger">
-              <div class="card-block bg-danger">
-                <div class="rotate">
-                  <i class="fa fa-list fa-4x"></i>
-                </div>
-                <h6 class="text-uppercase">Courses</h6>
-                <h1 class="display-1">87</h1>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-info">
-              <div class="card-block bg-info">
-                <div class="rotate">
-                  <i class="fa fa-bolt fa-5x"></i>
-                </div>
-                <h6 class="text-uppercase">Tests</h6>
-                <h1 class="display-1">125</h1>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-warning">
-              <div class="card-block bg-warning">
-                <div class="rotate">
-                  <i class="fa fa-share fa-5x"></i>
-                </div>
-                <h6 class="text-uppercase">Sign Ups</h6>
-                <h1 class="display-1">36</h1>
-              </div>
-            </div>
-          </div>
         </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 ">
+        <div class="card card-inverse card-danger ">
+            <div class="card-block bg-danger ">
+                <div class="rotate ">
+                    <i class="fa fa-list fa-4x "></i>
+                </div>
+                <h6 class="text-uppercase ">Courses</h6>
+                <h1 class="display-1 ">87</h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 ">
+        <div class="card card-inverse card-info ">
+            <div class="card-block bg-info ">
+                <div class="rotate ">
+                    <i class="fa fa-bolt fa-5x "></i>
+                </div>
+                <h6 class="text-uppercase ">Tests</h6>
+                <h1 class="display-1 ">125</h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 ">
+        <div class="card card-inverse card-warning ">
+            <div class="card-block bg-warning ">
+                <div class="rotate ">
+                    <i class="fa fa-share fa-5x "></i>
+                </div>
+                <h6 class="text-uppercase ">Sign Ups</h6>
+                <h1 class="display-1 ">36</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!--Footer-->
-  <div class="footer-copyright text-center py-3"> Copyright © 2020 Art Of Data Inc.</div>
-
-
+<div class="footer-copyright text-center py-3 "> Copyright © 2020 Art Of Data Inc.</div>
